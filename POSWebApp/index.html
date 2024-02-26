@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Mart</title>
+    <link rel = "icon" href="asstes/img/app.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vishal, Web App, POS Application, Simple Mart, Web Application">
+    <!--<meta name="description" content="I'm Full stack Developer in Sri Lanka. This is my Official Portfolio Web to show all Details About My Software Development.">-->
+    <meta name="owner" content="Vishal Sandakelum">
+    <meta name="author" content="Vishal Sandakelum">
+
+    <link rel="stylesheet" href="asstes/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="asstes/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Concert+One&family=Dongle:wght@700&family=Exo+2:wght@600&family=Inter&family=Inter+Tight:wght@700&family=Roboto+Mono&family=Rubik&family=Sora:wght@600&family=Source+Code+Pro:wght@800&family=Staatliches&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Main Container -->
+    <div class="container-fluid viewportfluid">
+        <div class="row">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand simplemart">Simple Mart
+                    <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+                    <label for="checkbox4">
+                        <div class="hamburger hamburger4">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                            <span class="bar bar4"></span>
+                            <span class="bar bar5"></span>
+                        </div>
+                    </label>
+                  </a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="button">Search</button>
+                    <i class="fa fa-share-alt fa-2x sharebtn" aria-hidden="true" style="margin-left: 16px;"></i>
+                    <i class="fa fa-bell fa-2x notificationbtn" aria-hidden="true" style="margin-left: 16px;"></i>
+                    <i class="fa fa-user-circle fa-2x" aria-hidden="true" style="margin-left: 16px;"></i>
+                  </form>
+                </div>
+            </nav>
+            <!--Option Side-->
+            <div class="col-8 col-md-4 col-sm-3 col-xxl-2 d-flex align height" id="options">
+                <div class="container">
+                    <!--Menu Options-->
+                    <div class="row align-items-start" id="maintype">Menu</div>
+                    <div class="row align-items-start" id="menutype">
+                        <div class="col-12 homebtn option">
+                            <button type="button" class="col-9 d-flex align-items-center option">
+                                <i class="fa fa-home fa-2x" aria-hidden="true">
+                                </i>
+                                Home
+                            </button>
+                        </div>
+                        <div class="col-12 option">
+                            <button type="button" class="col-9 d-flex align-items-center option">
+                                <i class="fa fa-user fa-2x" aria-hidden="true" style="margin-right: 16px;">
+                                </i>
+                                Customer
+                            </button>
+                        </div>
+                        <div class="col-12 option" id="colrs">
+                            <button type="button" class="col-9 d-flex align-items-center option">
+                                <i class="fa fa-cube fa-2x" aria-hidden="true">
+                                </i>
+                                Item
+                            </button>
+                        </div>
+                        <div class="col-12 option">
+                            <button type="button" class="col-9 d-flex align-items-center option">
+                                <i class="fa fa-cart-plus fa-2x" aria-hidden="true">
+                                </i>
+                                Order
+                            </button>
+                        </div>
+                        <div class="col-12 option">
+                            <button type="button" class="col-9 d-flex align-items-center option">
+                                <i class="fa fa-file-text fa-2x" aria-hidden="true">
+                                </i>
+                                Order Details
+                            </button>
+                        </div>
+                    </div>
+                    <!--Genaral Option-->
+                    <div class="row genaraltxt" id="maintype">Genaral</div>
+                    <div class="row d-flex align-content-between" id="Genaraltype">
+                        <div class="col-12 option">
+                            <button type="button" class="col-9 d-flex align-items-center settingbtn option">
+                                <i class="fa fa-cog fa-2x" aria-hidden="true" style="margin-right: 16px;">
+                                </i>
+                                Settings
+                            </button>
+                        </div>
+                        <div class="col-12 option">
+                            <button type="button" class="col-9 d-flex align-items-center option">
+                                <i class="fa fa-sign-out fa-2x" aria-hidden="true" style="margin-right: 16px;">
+                                </i>
+                                Log Out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Information (Right) Side-->
+            <div class="col-sm-12 col-xxl-10 height" style="display: block;">
+                <div class="container text-center" style="height: 90vh; margin-top: 20px;">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-7 col-sm-3 col-xxl-3 infodiv customerdiv">
+                            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                            <h5>Customers</h5>
+                            <h2>000,20</h2>
+                        </div>
+                        <div class="col-7 col-sm-3 col-xxl-3 infodiv itemdiv">
+                            <i class="fa fa-cube fa-2x" aria-hidden="true"></i>
+                            <h5>Items</h5>
+                            <h2>000,50</h2>
+                        </div>
+                        <div class="col-7 col-sm-3 col-xxl-3 infodiv orderdiv">
+                            <i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
+                            <h5>Orders</h5>
+                            <h2>000,25</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-around" style="margin-top: 50px;">
+                        <div class="col-11 barchartbackground" style="background-color: white;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Customer Page-->
+            <div class="col-sm-12 col-xxl-10 height" style="background-color: white; display: none !important;">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xxl-6 container text-center" style="margin-top: 100px;">
+                        <div class="col-12 rounded-3 customermanageform">
+                            <div class="row customertitlerow d-flex justify-content-around">
+                                <div class="customertitle rounded-top-3">Manage Customers</div>
+                                <div class="col-9 inputFieldarea">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="idf" placeholder="Id">
+                                        <label for="floatingInput">Id</label>
+                                      </div>
+                                      <div class="form-floating mb-3">
+                                        <input class="form-control" placeholder="Name">
+                                        <label for="floatingPassword">Name</label>
+                                      </div>
+                                      <div class="form-floating mb-3">
+                                        <input class="form-control" placeholder="Address">
+                                        <label for="floatingPassword">Address</label>
+                                      </div>
+                                      <div class="form-floating">
+                                        <input class="form-control" placeholder="Salary">
+                                        <label for="floatingPassword">Salary</label>
+                                    </div>
+                                </div>
+                                <div class="col-9 d-flex justify-content-between buttonsarea">
+                                    <button type="button" class="btn btn-outline-primary">Save</button>
+                                    <button type="button" class="btn btn-outline-success">Update</button>
+                                    <button type="button" class="btn btn-outline-danger">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 col-md-12 col-lg-6 col-xxl-6 container-fluid text-center" style="height: 60vh; margin-top: 100px;">
+                        <div class="col-12 col-xxl-12" style="height: 15vh;">
+                            <div class="mb-3 d-flex">
+                                <input type="" class="form-control customersearchbar" placeholder="Search">
+                                <button type="button" class="btn btn-outline-primary customersearchbtn">Search</button>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                    Get All
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-12 table-responsive customerdetailtable">
+                            <table class="table table-dark table-striped table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Salary(LKR)</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>
+                                        <button class="customerremovebtn">
+                                            <img src="asstes/img/bin.png" alt="">
+                                        </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>
+                                        <button class="customerremovebtn">
+                                            <img src="asstes/img/bin.png" alt="">
+                                        </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>@twitter</td>
+                                    <td>@twitter</td>
+                                    <td>
+                                        <button class="customerremovebtn">
+                                            <img src="asstes/img/bin.png" alt="">
+                                        </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!---->
+            <!--Item Page-->
+            <div class="col-sm-12 col-xxl-10 height" style="background-color: white; display: non !important;">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xxl-6 container text-center" style="margin-top: 100px;">
+                        <div class="col-12 rounded-3 customermanageform">
+                            <div class="row customertitlerow d-flex justify-content-around">
+                                <div class="itemtitle rounded-top-3">Manage Items</div>
+                                <div class="col-9 inputFieldarea">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="idf" placeholder="Id">
+                                        <label for="floatingInput">Item Code</label>
+                                      </div>
+                                      <div class="form-floating mb-3">
+                                        <input class="form-control" placeholder="Name">
+                                        <label for="floatingPassword">Item Name</label>
+                                      </div>
+                                      <div class="form-floating mb-3">
+                                        <input class="form-control" placeholder="Address">
+                                        <label for="floatingPassword">Item QTY</label>
+                                      </div>
+                                      <div class="form-floating">
+                                        <input class="form-control" placeholder="Salary">
+                                        <label for="floatingPassword">Item Price</label>
+                                    </div>
+                                </div>
+                                <div class="col-9 d-flex justify-content-between buttonsarea">
+                                    <button type="button" class="btn btn-outline-primary">Save</button>
+                                    <button type="button" class="btn btn-outline-success">Update</button>
+                                    <button type="button" class="btn btn-outline-danger">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 col-md-12 col-lg-6 col-xxl-6 container-fluid text-center" style="height: 60vh; margin-top: 100px;">
+                        <div class="col-12 col-xxl-12" style="height: 15vh;">
+                            <div class="mb-3 d-flex">
+                                <input type="" class="form-control customersearchbar" placeholder="Search">
+                                <button type="button" class="btn btn-outline-primary customersearchbtn">Search</button>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                    Get All
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-12 table-responsive customerdetailtable">
+                            <table class="table table-dark table-striped table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Item Code</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Item QTY</th>
+                                    <th scope="col">Item Price(LKR)</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>
+                                        <button class="customerremovebtn">
+                                            <img src="asstes/img/bin.png" alt="">
+                                        </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>
+                                        <button class="customerremovebtn">
+                                            <img src="asstes/img/bin.png" alt="">
+                                        </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>@twitter</td>
+                                    <td>@twitter</td>
+                                    <td>
+                                        <button class="customerremovebtn">
+                                            <img src="asstes/img/bin.png" alt="">
+                                        </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!---->
+            <!--Orders Page-->
+            <div class="col-xxl-10 height">
+                <div class="d-flex flex-wrap align-content-around height">
+                    <div class="row col-xxl-12 d-flex justify-content-around">
+                        <div class="col-xxl-6 rounded-3 container text-center d-flex justify-content-around " style="height: 40vh;">
+                            <div class="row d-flex rounded-3 invoiceform" style="border: 1px solid black;">
+                                <div class="row d-flex justify-content-around rounded-top-3 orderinvoicetitle">Invoice Details</div>
+                                <div class="col-xxl-12 d-flex align-items-center invoicefield" style="position: relative; height: 80%;">
+                                    <div class="col-7 invodetailsleftside d-flex flex-wrap align-content-between">
+                                        <div class="row">
+                                            <h7 style="width: fit-content;">Order ID :</h7>
+                                            <h7 style="width: fit-content;">OR0-001</h7>
+                                        </div>
+                                        <div class="row">
+                                            <h7 style="width: fit-content;">Name :</h7>
+                                            <h7 style="width: fit-content;">Vishal Sandakelum</h7>
+                                        </div>
+                                        <div class="row">
+                                            <h7 style="width: fit-content;">Address :</h7>
+                                            <h7 style="width: fit-content;">Galle Thalgaswala</h7>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex flex-wrap align-content-between invodetailsrightside">
+                                        <div class="custom-input text-start">
+                                            <input type="text" id="textInput" placeholder="Customer ID">
+                                        </div>
+                                        <div class="row">
+                                            <h7 style="width: fit-content;">Salary :</h7>
+                                            <h7 style="width: fit-content;">100 000</h7>
+                                        </div>
+                                        <div class="row" style="height: 87px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 container text-center" style="height: 40vh;">
+                            <div class="col-12 col-xxl-12" style="height: 10vh;">
+                                <div class="mb-3 d-flex">
+                                    <input type="" class="form-control customersearchbar" placeholder="Search">
+                                    <button type="button" class="btn btn-outline-primary customersearchbtn">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xxl-12 table-responsive ordercartdetailtable">
+                                <table class="table table-dark table-striped table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Item Code</th>
+                                        <th scope="col">Item Name</th>
+                                        <th scope="col">Order QTY</th>
+                                        <th scope="col">Item Price(LKR)</th>
+                                        <th scope="col"></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>
+                                            <button class="customerremovebtn">
+                                                <img src="asstes/img/bin.png" alt="">
+                                            </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <button class="customerremovebtn">
+                                                <img src="asstes/img/bin.png" alt="">
+                                            </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>
+                                            <button class="customerremovebtn">
+                                                <img src="asstes/img/bin.png" alt="">
+                                            </button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-xxl-12 d-flex justify-content-around">
+                        <div class="col-xxl-6 rounded-3 container text-center d-flex justify-content-around" style="height: 50vh;">
+                            <div class="row d-flex rounded-3 invoiceform" style="border: 1px solid black;">
+                                <div class="row d-flex justify-content-around rounded-top-3 orderinvoicetitle">Item Details</div>
+                                <div class="col-xxl-12 d-flex flex-wrap align-items-center invoicefield" style="position: relative; height: 80%;">
+                                    <div class="col-7 itemdetailsleftside d-flex flex-wrap align-content-between">
+                                        <div class="row">
+                                            <h7 style="width: fit-content;">Item Name :</h7>
+                                            <h7 style="width: fit-content;">Signal</h7>
+                                        </div>
+                                        <div class="row col-12">
+                                            <h7 style="width: fit-content;">Item Price :</h7>
+                                            <h7 style="width: fit-content;">180.00</h7>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex flex-wrap align-content-between itemdetailsrightside">
+                                        <div class="custom-input text-start">
+                                            <input type="text" id="textInput" placeholder="Item ID">
+                                        </div>
+                                        <div class="row">
+                                            <h7 style="width: fit-content;">Item Quantity :</h7>
+                                            <h7 style="width: fit-content;">200</h7>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex flex-wrap align-items-center">
+                                        <div class="custom-input mb-2" style="position: relative; width: 100%;">
+                                            <input type="text" id="textInput" placeholder="Qty" style="position: relative; width: 100%;">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-around">
+                                            <button type="button" class="btn btn-outline-success">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                                Add to cart
+                                            </button>
+                                            <button type="button" class="btn btn-outline-danger" style="width: 130px;">
+                                                <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                                                Clear
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 container text-center d-flex flex-wrap align-items-center" style="height: 50vh;">
+                            <div class="col-12" style=" height: 150px;">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <h5>Total : 000.00</h5>
+                                    <h5>Sub Total : 000.00</h5>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="custom-input text-start">
+                                        <input type="text" id="textInput" placeholder="Price(LKR)">
+                                    </div>
+                                    <div class="custom-input text-start">
+                                        <input type="text" id="textInput" placeholder="Discount %">
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-start">
+                                    <h5>Balance : 000.00</h5>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-success">
+                                        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                        Place Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="asstes/bootstrap/js/bootstrap.js"></script>
+    <script src="asstes/jquery/jquery-3.7.1.min.js"></script>
+    <script src="asstes/js/action.js"></script>
+</body>
+</html>

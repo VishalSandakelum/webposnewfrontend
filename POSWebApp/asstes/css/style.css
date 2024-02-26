@@ -1,0 +1,577 @@
+/*Header Title*/
+.simplemart{
+    font-family: 'Concert One', sans-serif;
+    font-size: x-large;
+}
+
+/*Hamburger Button On Header*/
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+
+.hamburger {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+.hamburger2 .bar2,
+.hamburger3 .bar3,
+.hamburger4 .bar4 {
+    top: 13.5px;
+}
+
+.hamburger4 .bar5 {
+    bottom: 0px;
+}
+
+.hamburger4 .bar {
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+
+.hamburger4 .bar2 {
+    width: 1px;
+    transform: rotate(90deg);
+    left: 13.5px;
+}
+
+.hamburger4 .bar3 {
+    width: 1px;
+    left: 13.5px;
+    
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar1{
+    top: 13.5px;
+    background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar2{
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar3{
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar4{
+    background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar5{
+    bottom: 13.5px;
+    background-color: transparent; 
+}
+
+/*Basic Background*/
+.viewportfluid {
+    height: 100vh;
+}
+
+.height{
+    height: 100vh;
+}
+
+.align{
+    margin-top: 60px;
+}
+
+#maintype{
+    font-family: 'Concert One', sans-serif;
+    font-size: x-large;
+}
+
+.homebtn{
+    margin-top: 15px;
+}
+
+/*Side Options*/
+
+.option{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    border-radius: 13px;
+    background-color: transparent;
+}
+
+.option>button{
+    border: 1px solid rgba(128, 128, 128, 0.888);
+    border-radius: 13px;
+    position: relative;
+  
+    --background-color: #E3E3E3;
+    --border-size: 2px;
+    --accent-color: #0AF;
+}
+
+/*Option Button Hover Effect*/
+.option>button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    border-radius: 13px;
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .option>button:hover::before,
+  .option>button:focus::before {
+    transform: scaleX(1);
+  }
+  
+  .option>button {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+  }
+  
+  
+  .option>button:hover,
+  .option>button:focus {
+    color: white;
+  }
+/*------------------------------*/
+
+i{
+    margin-right: 11px;
+}
+
+#menutype{
+    margin-top: 20px;
+    height: 35vh;
+    border-top: 3px solid black;
+}
+
+#Genaraltype{
+    margin-top: 20px;
+    height: 14vh;
+    border-top: 3px solid black;
+}
+
+.genaraltxt{
+    margin-top: 50px;
+}
+
+.settingbtn{
+    margin-top: 15px;
+}
+
+/*DashBoard Information*/
+
+.infodiv{
+    height: 30vh;
+}
+
+.customerdiv{
+    background: linear-gradient(152deg, rgb(172, 233, 250) 26%, rgba(2,119,232,1) 100%);
+}
+
+.itemdiv{
+    background: linear-gradient(152deg, rgba(255,169,116,1) 26%, rgba(232,2,134,1) 100%);
+}
+
+.orderdiv{
+    background: linear-gradient(152deg, rgb(187, 249, 229) 26%, rgba(3,211,152,1) 100%);
+}
+
+.customerdiv>i,.itemdiv>i,.orderdiv>i{
+    position: relative;
+    top: 20px;
+    left: 120px;
+}
+
+.customerdiv>h5,.itemdiv>h5,.orderdiv>h5{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    right: 80px;
+    color: white;
+}
+
+.customerdiv>h2,.itemdiv>h2,.orderdiv>h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    right: 40px;
+    color: white;
+}
+
+/*Bar Chart*/
+
+.barchartbackground{
+    height: 55vh;
+}
+
+/*Customer Page*/
+.customertitle,.itemtitle,.orderinvoicetitle{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    width: 96%;
+    height: 45px;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    background: linear-gradient(152deg, rgb(172, 233, 250) 26%, rgba(2,119,232,1) 100%);
+    color: white;
+}
+
+.customermanageform{
+    height: 60vh;
+    border: 1px solid black;
+}
+
+.inputFieldarea{
+    margin-top: 20px;
+}
+
+.inputFieldarea>div>input{
+    height: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.buttonsarea{
+    margin-top: 25px;
+}
+
+.buttonsarea>button{
+    width: 100px;
+}
+
+.customersearchbar{
+    position: relative;
+    width: 75%;
+}
+
+.customersearchbtn{
+    position: relative;
+    left: 8%;
+    width: 100px;
+}
+
+.customerdetailtable{
+    margin-top: 50px;
+    height: 38vh;
+}
+
+.customerremovebtn{
+    background-color: transparent;
+    border: none;
+}
+
+.customerremovebtn>img{
+    width: 25px;
+}
+
+/*Items Page*/
+
+.itemtitle{
+    background: linear-gradient(152deg, rgba(255,169,116,1) 26%, rgba(232,2,134,1) 100%);
+}
+
+/*Invoice Details*/
+
+.invoiceform{
+    width: 96%;
+}
+
+.orderinvoicetitle{
+    width: 100%;
+    margin-block-start: 0%;
+}
+
+.custom-input input {
+    border: none;
+    border-bottom: 2px solid black; /* Set the bottom border color */
+    padding: 8px;
+    font-size: 16px;
+}
+
+.invoicefield{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.invodetailsleftside{
+    height: 150px;
+}
+
+.invodetailsrightside{
+    height: 150px;
+}
+
+.itemdetailsleftside{
+    height: 90px;
+    margin-top: 30px;
+}
+
+.itemdetailsrightside{
+    height: 90px;
+    margin-top: 30px;
+}
+
+.ordercartdetailtable{
+    margin-top: 45px;
+    height: 23vh;
+}
+
+.orderinvoicetitle{
+    background: linear-gradient(152deg, rgb(187, 249, 229) 26%, rgba(3,211,152,1) 100%);
+}
+
+/*------------------------------Media Query For 1024 to 1439 Range (Laptop(normal) Size)------------------------------*/
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    #options{
+        visibility: hidden;
+        background-color: white;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .customerdiv>i,.itemdiv>i,.orderdiv>i{
+        position: relative;
+        top: 20px;
+        left: 100px;
+    }
+    
+    .customerdiv>h5,.itemdiv>h5,.orderdiv>h5{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 50px;
+        right: 55px;
+        color: white;
+    }
+    
+    .customerdiv>h2,.itemdiv>h2,.orderdiv>h2{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 80px;
+        right: 25px;
+        color: white;
+    }
+
+    .customersearchbtn{
+        left: 3%;
+    }
+}
+
+@media all and (min-width: 1440px){
+    #options{
+        visibility: visible;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+    #options{
+        visibility: hidden;
+        background-color: white;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .customerdiv>i,.itemdiv>i,.orderdiv>i{
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+    
+    .customerdiv>h5,.itemdiv>h5,.orderdiv>h5{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 50px;
+        right: 35px;
+        color: white;
+    }
+    
+    .customerdiv>h2,.itemdiv>h2,.orderdiv>h2{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 80px;
+        right: 10px;
+        color: white;
+    }
+
+    .customersearchbtn{
+        left: 11%;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 767px){
+    #options{
+        visibility: hidden;
+        background-color: white;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .sharebtn,.notificationbtn{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .customerdiv>i,.itemdiv>i,.orderdiv>i{
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+    
+    .customerdiv>h5,.itemdiv>h5,.orderdiv>h5{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 50px;
+        right: 35px;
+        color: white;
+    }
+    
+    .customerdiv>h2,.itemdiv>h2,.orderdiv>h2{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 80px;
+        right: 10px;
+        color: white;
+    }
+
+    .customersearchbtn{
+        left: 0%;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 424px){
+    #options{
+        visibility: hidden;
+        background-color: white;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .sharebtn,.notificationbtn{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .customerdiv>i,.itemdiv>i,.orderdiv>i{
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+    
+    .customerdiv>h5,.itemdiv>h5,.orderdiv>h5{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 50px;
+        right: 35px;
+        color: white;
+    }
+    
+    .customerdiv>h2,.itemdiv>h2,.orderdiv>h2{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 80px;
+        right: 10px;
+        color: white;
+    }
+
+    .customersearchbtn{
+        left: 0%;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 374px){
+    #options{
+        visibility: hidden;
+        background-color: white;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .sharebtn,.notificationbtn{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .customerdiv>i,.itemdiv>i,.orderdiv>i{
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+    
+    .customerdiv>h5,.itemdiv>h5,.orderdiv>h5{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 50px;
+        right: 35px;
+        color: white;
+    }
+    
+    .customerdiv>h2,.itemdiv>h2,.orderdiv>h2{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 80px;
+        right: 10px;
+        color: white;
+    }
+
+    .customersearchbtn{
+        left: 0%;
+    }
+}
