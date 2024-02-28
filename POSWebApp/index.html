@@ -56,35 +56,35 @@
                     <div class="row align-items-start" id="maintype">Menu</div>
                     <div class="row align-items-start" id="menutype">
                         <div class="col-12 homebtn option">
-                            <button type="button" class="col-9 d-flex align-items-center option">
+                            <button type="button" class="col-9 d-flex align-items-center option homebtn">
                                 <i class="fa fa-home fa-2x" aria-hidden="true">
                                 </i>
                                 Home
                             </button>
                         </div>
                         <div class="col-12 option">
-                            <button type="button" class="col-9 d-flex align-items-center option">
+                            <button type="button" class="col-9 d-flex align-items-center option customerbtn">
                                 <i class="fa fa-user fa-2x" aria-hidden="true" style="margin-right: 16px;">
                                 </i>
                                 Customer
                             </button>
                         </div>
                         <div class="col-12 option" id="colrs">
-                            <button type="button" class="col-9 d-flex align-items-center option">
+                            <button type="button" class="col-9 d-flex align-items-center option itembtn">
                                 <i class="fa fa-cube fa-2x" aria-hidden="true">
                                 </i>
                                 Item
                             </button>
                         </div>
                         <div class="col-12 option">
-                            <button type="button" class="col-9 d-flex align-items-center option">
+                            <button type="button" class="col-9 d-flex align-items-center option orderbtn">
                                 <i class="fa fa-cart-plus fa-2x" aria-hidden="true">
                                 </i>
                                 Order
                             </button>
                         </div>
                         <div class="col-12 option">
-                            <button type="button" class="col-9 d-flex align-items-center option">
+                            <button type="button" class="col-9 d-flex align-items-center option orderdetailsbtn">
                                 <i class="fa fa-file-text fa-2x" aria-hidden="true">
                                 </i>
                                 Order Details
@@ -112,7 +112,7 @@
                 </div>
             </div>
             <!--Information (Right) Side-->
-            <div class="col-sm-12 col-xxl-10 height" style="display: block;">
+            <div class="col-sm-12 col-xxl-10 height homepage" style="display: block;">
                 <div class="container text-center" style="height: 90vh; margin-top: 20px;">
                     <div class="row d-flex justify-content-around">
                         <div class="col-7 col-sm-3 col-xxl-3 infodiv customerdiv">
@@ -132,13 +132,15 @@
                         </div>
                     </div>
                     <div class="row d-flex justify-content-around" style="margin-top: 50px;">
-                        <div class="col-11 barchartbackground" style="background-color: white;"></div>
+                        <div class="col-11 barchartbackground" style="background-color: white;">
+                            <canvas id="myChart" style="position: relative; width:100%; height: 100%;"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!--Customer Page-->
-            <div class="col-sm-12 col-xxl-10 height" style="background-color: white; display: none !important;">
+            <div class="col-sm-12 col-xxl-10 height customerpage" style="background-color: white; display: none !important;">
                 <div class="row d-flex justify-content-around">
                     <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xxl-6 container text-center" style="margin-top: 100px;">
                         <div class="col-12 rounded-3 customermanageform">
@@ -238,7 +240,7 @@
             </div>
             <!---->
             <!--Item Page-->
-            <div class="col-sm-12 col-xxl-10 height" style="background-color: white; display: non !important;">
+            <div class="col-sm-12 col-xxl-10 height itempage" style="background-color: white; display: none !important;">
                 <div class="row d-flex justify-content-around">
                     <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xxl-6 container text-center" style="margin-top: 100px;">
                         <div class="col-12 rounded-3 customermanageform">
@@ -338,7 +340,7 @@
             </div>
             <!---->
             <!--Orders Page-->
-            <div class="col-xxl-10 height">
+            <div class="col-xxl-10 height placeorderpage" style="display: none;">
                 <div class="d-flex flex-wrap align-content-around height">
                     <div class="row col-xxl-12 d-flex justify-content-around">
                         <div class="col-xxl-6 rounded-3 container text-center d-flex justify-content-around " style="height: 40vh;">
@@ -504,6 +506,7 @@
     
     <script src="asstes/bootstrap/js/bootstrap.js"></script>
     <script src="asstes/jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="asstes/js/action.js"></script>
 </body>
 </html>
