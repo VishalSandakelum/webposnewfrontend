@@ -287,28 +287,28 @@ i{
     width: 100px;
 }
 
-.customersearchbar{
+.customersearchbar,.itemssearchbar{
     position: relative;
     width: 75%;
 }
 
-.customersearchbtn{
+.customersearchbtn,.itemsearchbtn{
     position: relative;
     left: 8%;
     width: 100px;
 }
 
-.customerdetailtable{
+.customerdetailtable,.itemdetailtable{
     margin-top: 50px;
     height: 38vh;
 }
 
-.customerremovebtn{
+.customerremovebtn,.itemsremovebtn,.ODItemsremovebtn{
     background-color: transparent;
     border: none;
 }
 
-.customerremovebtn>img{
+.customerremovebtn>img,.itemsremovebtn>img,.ODItemsremovebtn>img{
     width: 25px;
 }
 

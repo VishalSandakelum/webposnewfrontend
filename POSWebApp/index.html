@@ -148,26 +148,26 @@
                                 <div class="customertitle rounded-top-3">Manage Customers</div>
                                 <div class="col-9 inputFieldarea">
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="idf" placeholder="Id">
+                                        <input class="form-control customerID" id="idf" placeholder="Id">
                                         <label for="floatingInput">Id</label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control" placeholder="Name">
+                                        <input class="form-control customerName" placeholder="Name">
                                         <label for="floatingPassword">Name</label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control" placeholder="Address">
+                                        <input class="form-control customerAddress" placeholder="Address">
                                         <label for="floatingPassword">Address</label>
                                       </div>
                                       <div class="form-floating">
-                                        <input class="form-control" placeholder="Salary">
+                                        <input class="form-control CustomerSalary" placeholder="Salary">
                                         <label for="floatingPassword">Salary</label>
                                     </div>
                                 </div>
                                 <div class="col-9 d-flex justify-content-between buttonsarea">
-                                    <button type="button" class="btn btn-outline-primary">Save</button>
-                                    <button type="button" class="btn btn-outline-success">Update</button>
-                                    <button type="button" class="btn btn-outline-danger">Clear</button>
+                                    <button type="button" class="btn btn-outline-primary CustomerSave">Save</button>
+                                    <button type="button" class="btn btn-outline-success CustomerUpdate">Update</button>
+                                    <button type="button" class="btn btn-outline-danger CustomerInputsClear">Clear</button>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                     <div class=" col-sm-6 col-md-12 col-lg-6 col-xxl-6 container-fluid text-center" style="height: 60vh; margin-top: 100px;">
                         <div class="col-12 col-xxl-12" style="height: 15vh;">
                             <div class="mb-3 d-flex">
-                                <input type="" class="form-control customersearchbar" placeholder="Search">
+                                <input type="" class="form-control customersearchbar SearchID" placeholder="Search">
                                 <button type="button" class="btn btn-outline-primary customersearchbtn">Search</button>
                             </div>
                             <div class="col-12 d-flex justify-content-end">
@@ -248,26 +248,26 @@
                                 <div class="itemtitle rounded-top-3">Manage Items</div>
                                 <div class="col-9 inputFieldarea">
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="idf" placeholder="Id">
+                                        <input class="form-control itemCode" id="idf" placeholder="Id">
                                         <label for="floatingInput">Item Code</label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control" placeholder="Name">
+                                        <input class="form-control itemName" placeholder="Name">
                                         <label for="floatingPassword">Item Name</label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control" placeholder="Address">
+                                        <input class="form-control itemQTY" placeholder="Address">
                                         <label for="floatingPassword">Item QTY</label>
                                       </div>
                                       <div class="form-floating">
-                                        <input class="form-control" placeholder="Salary">
+                                        <input class="form-control itemPrice" placeholder="Salary">
                                         <label for="floatingPassword">Item Price</label>
                                     </div>
                                 </div>
                                 <div class="col-9 d-flex justify-content-between buttonsarea">
-                                    <button type="button" class="btn btn-outline-primary">Save</button>
-                                    <button type="button" class="btn btn-outline-success">Update</button>
-                                    <button type="button" class="btn btn-outline-danger">Clear</button>
+                                    <button type="button" class="btn btn-outline-primary ItemSave">Save</button>
+                                    <button type="button" class="btn btn-outline-success ItemUpdate">Update</button>
+                                    <button type="button" class="btn btn-outline-danger ItemInputsClear">Clear</button>
                                 </div>
                             </div>
                         </div>
@@ -275,8 +275,8 @@
                     <div class=" col-sm-6 col-md-12 col-lg-6 col-xxl-6 container-fluid text-center" style="height: 60vh; margin-top: 100px;">
                         <div class="col-12 col-xxl-12" style="height: 15vh;">
                             <div class="mb-3 d-flex">
-                                <input type="" class="form-control customersearchbar" placeholder="Search">
-                                <button type="button" class="btn btn-outline-primary customersearchbtn">Search</button>
+                                <input type="" class="form-control itemssearchbar" placeholder="Search">
+                                <button type="button" class="btn btn-outline-primary itemsearchbtn">Search</button>
                             </div>
                             <div class="col-12 d-flex justify-content-end">
                                 <button type="button" class="btn btn-outline-primary">
@@ -285,7 +285,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-12 col-xxl-12 table-responsive customerdetailtable">
+                        <div class="col-12 col-xxl-12 table-responsive itemdetailtable">
                             <table class="table table-dark table-striped table-hover">
                                 <thead>
                                   <tr>
@@ -350,24 +350,24 @@
                                     <div class="col-7 invodetailsleftside d-flex flex-wrap align-content-between">
                                         <div class="row">
                                             <h7 style="width: fit-content;">Order ID :</h7>
-                                            <h7 style="width: fit-content;">OR0-001</h7>
+                                            <h7 style="width: fit-content;" class="orderID">OR00-001</h7>
                                         </div>
-                                        <div class="row">
+                                        <div class="row col-12">
                                             <h7 style="width: fit-content;">Name :</h7>
-                                            <h7 style="width: fit-content;">Vishal Sandakelum</h7>
+                                            <h7 style="width: fit-content;" class="ODcustomerName">Vishal Sandakelum</h7>
                                         </div>
                                         <div class="row">
                                             <h7 style="width: fit-content;">Address :</h7>
-                                            <h7 style="width: fit-content;">Galle Thalgaswala</h7>
+                                            <h7 style="width: fit-content;" class="ODcustomerAddress">Galle Thalgaswala</h7>
                                         </div>
                                     </div>
                                     <div class="col-5 d-flex flex-wrap align-content-between invodetailsrightside">
                                         <div class="custom-input text-start">
-                                            <input type="text" id="textInput" placeholder="Customer ID">
+                                            <input type="text" id="textInput" class="ODcustomerID" placeholder="Customer ID">
                                         </div>
                                         <div class="row">
                                             <h7 style="width: fit-content;">Salary :</h7>
-                                            <h7 style="width: fit-content;">100 000</h7>
+                                            <h7 style="width: fit-content;" class="ODcustomerSalary">100 000</h7>
                                         </div>
                                         <div class="row" style="height: 87px;"></div>
                                     </div>
@@ -393,39 +393,6 @@
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>
-                                            <button class="customerremovebtn">
-                                                <img src="asstes/img/bin.png" alt="">
-                                            </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>
-                                            <button class="customerremovebtn">
-                                                <img src="asstes/img/bin.png" alt="">
-                                            </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>
-                                            <button class="customerremovebtn">
-                                                <img src="asstes/img/bin.png" alt="">
-                                            </button>
-                                        </td>
-                                      </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -439,20 +406,20 @@
                                     <div class="col-7 itemdetailsleftside d-flex flex-wrap align-content-between">
                                         <div class="row">
                                             <h7 style="width: fit-content;">Item Name :</h7>
-                                            <h7 style="width: fit-content;">Signal</h7>
+                                            <h7 style="width: fit-content;" class="ODitemName">Signal</h7>
                                         </div>
                                         <div class="row col-12">
                                             <h7 style="width: fit-content;">Item Price :</h7>
-                                            <h7 style="width: fit-content;">180.00</h7>
+                                            <h7 style="width: fit-content;" class="ODitemPrice">180.00</h7>
                                         </div>
                                     </div>
                                     <div class="col-5 d-flex flex-wrap align-content-between itemdetailsrightside">
                                         <div class="custom-input text-start">
-                                            <input type="text" id="textInput" placeholder="Item ID">
+                                            <input type="text" id="textInput" class="ODitemID" placeholder="Item ID">
                                         </div>
                                         <div class="row">
                                             <h7 style="width: fit-content;">Item Quantity :</h7>
-                                            <h7 style="width: fit-content;">200</h7>
+                                            <h7 style="width: fit-content;" class="ODitemQuantity">200</h7>
                                         </div>
                                     </div>
                                     <div class="col-12 d-flex flex-wrap align-items-center">
@@ -460,11 +427,11 @@
                                             <input type="text" id="textInput" placeholder="Qty" style="position: relative; width: 100%;">
                                         </div>
                                         <div class="col-12 d-flex justify-content-around">
-                                            <button type="button" class="btn btn-outline-success">
+                                            <button type="button" class="btn btn-outline-success ODitemsDetailsAddtoCart">
                                                 <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                                 Add to cart
                                             </button>
-                                            <button type="button" class="btn btn-outline-danger" style="width: 130px;">
+                                            <button type="button" class="btn btn-outline-danger ODitemsDetailsclear" style="width: 130px;">
                                                 <i class="fa fa-paint-brush" aria-hidden="true"></i>
                                                 Clear
                                             </button>
@@ -491,7 +458,7 @@
                                     <h5>Balance : 000.00</h5>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
-                                    <button type="button" class="btn btn-outline-success">
+                                    <button type="button" class="btn btn-outline-success placeOrder">
                                         <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                                         Place Order
                                     </button>
@@ -507,6 +474,8 @@
     <script src="asstes/bootstrap/js/bootstrap.js"></script>
     <script src="asstes/jquery/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="asstes/js/action.js"></script>
+    <script src="asstes/js/DB.js"></script>
 </body>
 </html>
